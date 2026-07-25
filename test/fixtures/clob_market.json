@@ -1,0 +1,31 @@
+{
+  "condition_id": "0xabc1234567890000000000000000000000000000000000000000000000000000",
+  "question_id": "0xdef1234567890000000000000000000000000000000000000000000000000000",
+  "question": "Will BTC be over $100,000 by 2026-12-31?",
+  "description": "Resolves YES if Bitcoin closes above $100,000 USD on any day before 2026-12-31 23:59 UTC.",
+  "market_slug": "btc-100k-by-2026-12-31",
+  "end_date_iso": "2026-12-31T23:59:00Z",
+  "minimum_order_size": "5",
+  "minimum_tick_size": "0.01",
+  "neg_risk": false,
+  "category": "Crypto",
+  "tags": ["Bitcoin", "Crypto", "Price"],
+  "enable_order_book": true,
+  "active": true,
+  "closed": false,
+  "token_id": "111111111111111111111111111111111111111111111111111111111111111111",
+  "tokens": [
+    {
+      "token_id": "111111111111111111111111111111111111111111111111111111111111111111",
+      "outcome": "Yes",
+      "price": 0.55,
+      "winner": false
+    },
+    {
+      "token_id": "222222222222222222222222222222222222222222222222222222222222222222",
+      "outcome": "No",
+      "price": 0.45,
+      "winner": false
+    }
+  ]
+}

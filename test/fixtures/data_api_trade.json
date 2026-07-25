@@ -1,0 +1,18 @@
+{
+  "transactionHash": "0xdeadbeef00000000000000000000000000000000000000000000000000000000",
+  "timestamp": 1714128050,
+  "asset": "111111111111111111111111111111111111111111111111111111111111111111",
+  "conditionId": "0xabc1234567890000000000000000000000000000000000000000000000000000",
+  "eventSlug": "btc-100k-by-2026-12-31",
+  "title": "Will BTC be over $100,000 by 2026-12-31?",
+  "type": "TRADE",
+  "side": "BUY",
+  "size": "12.5",
+  "price": "0.56",
+  "outcome": "Yes",
+  "outcomeIndex": 0,
+  "pseudonym": "TraderJoe",
+  "proxyWallet": "0x1111111111111111111111111111111111111111",
+  "name": "trader-joe",
+  "bio": ""
+}
