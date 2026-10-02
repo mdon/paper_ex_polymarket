@@ -1,5 +1,28 @@
 # Changelog
 
+## 0.4.0 - 2026-10-01
+
+### Added
+
+- **The CLOB v2 taker fee, modelled.** `PaperExPolymarket.Fees.fee/2` accepts
+  `:fee_rate` and charges `shares × rate × price × (1 - price)` — the
+  protocol's match-time, category-based fee curve. `maker: true` charges
+  nothing (makers pay 0 in v2). `Fees.rate_for/1` returns the taker rate for
+  a market category (`:crypto` 0.07, `:sports` 0.05,
+  `:finance`/`:politics`/`:mentions`/`:tech` 0.04,
+  `:economics`/`:culture`/`:weather`/`:other` 0.05, `:geopolitics`/`:world`
+  0.0); an unknown category gets the "other" rate rather than zero.
+  A mid-priced crypto taker pays about 3.5% of notional, which is more than
+  most thin paper edges — P&L computed at zero fee is optimistic.
+
+### Changed
+
+- The `Fees` moduledoc no longer says v2 charges no trade-time fees. v2
+  removed `feeRateBps` from the signed order; it did not remove fees.
+
+Nothing changes for existing callers: with neither `:fee_rate` nor `:fee_bps`
+the fee is still zero, and `:fee_bps` behaves as before.
+
 ## 0.3.2 - 2026-07-25
 
 ### Fixed

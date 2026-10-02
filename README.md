@@ -49,7 +49,8 @@ Implemented:
   semantics for `:market :amount` and strict numeric/timestamp
   parsing.
 - `PaperExPolymarket.ActivityMapper` — Data-API / RTDS trade event ↔ `PaperEx.Fill`.
-- `PaperExPolymarket.Fees` — bps-based fee helper.
+- `PaperExPolymarket.Fees` — the CLOB v2 taker fee (`:fee_rate`, by market
+  category via `rate_for/1`) or a flat `:fee_bps`; zero by default.
 - `PaperExPolymarket.LiveMirror` — live-mirror flows:
   `simulate_intent/4`, `mirror_actual_fill/4`, `record_pending/3`,
   `resolve_pending/4` (`:filled` / `:cancelled`).

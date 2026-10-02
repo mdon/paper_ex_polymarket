@@ -1,7 +1,7 @@
 defmodule PaperExPolymarket.MixProject do
   use Mix.Project
 
-  @version "0.3.2"
+  @version "0.4.0"
   @source_url "https://github.com/mdon/paper_ex_polymarket"
 
   def project do
